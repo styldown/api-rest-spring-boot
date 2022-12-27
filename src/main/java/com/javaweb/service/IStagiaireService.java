@@ -8,7 +8,7 @@ import com.javaweb.model.Stagiaire;
 
 
 public interface IStagiaireService {
-	ArrayList<Stagiaire> findByFormation(Formation form);
+	ArrayList<Stagiaire> findByFormation(int form);
 	Stagiaire findById(int id);
 	void save(Stagiaire stag);
 }

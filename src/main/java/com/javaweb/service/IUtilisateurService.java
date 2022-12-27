@@ -10,4 +10,5 @@ public interface IUtilisateurService {
 	Utilisateur findById(int id);
 	void save(Utilisateur utilisateur);
 	List<Utilisateur> findAll();
+	Utilisateur findUserByLogin(String login);
 }	

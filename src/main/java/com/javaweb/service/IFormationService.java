@@ -8,6 +8,6 @@ import com.javaweb.model.Formation;
 public interface IFormationService {
 	
 	Formation findById(int id);
-	ArrayList<Formation> findByFactory(Factory fac);
+	ArrayList<Formation> findByFactory(int id);
 	public Formation save(Formation formation);
 }

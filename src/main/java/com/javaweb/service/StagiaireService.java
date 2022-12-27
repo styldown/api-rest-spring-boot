@@ -21,8 +21,8 @@ public class StagiaireService implements IStagiaireService {
 	StagiaireRepository stagiaireRepos;
 	
 	@Override
-	public ArrayList<Stagiaire> findByFormation(Formation form) {
-		return stagiaireRepos.findByFormation(form);
+	public ArrayList<Stagiaire> findByFormation(int id) {
+		return stagiaireRepos.findByFormation(id);
 	}
 
 	@Override

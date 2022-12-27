@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.javaweb.model.Utilisateur;
+import com.javaweb.repository.AuthentificationRepository;
 import com.javaweb.repository.UtilisateurRepository;
 
 
@@ -32,5 +33,10 @@ public class UtilisateurService implements IUtilisateurService{
 	public List<Utilisateur> findAll() {
 		return util.findAll();
 	}
+	@Override
+	public Utilisateur findUserByLogin(String login) {
+		// TODO Auto-generated method stub
+		return util.findUserByLogin(login);
+	} 
 	
 }

@@ -18,8 +18,8 @@ public class FormationService implements IFormationService{
 	FormationRepository formationRep;
 
 	@Override
-	public ArrayList<Formation> findByFactory(Factory fac) {  
-		return formationRep.findByFactory(fac);
+	public ArrayList<Formation> findByFactory(int id) {  
+		return formationRep.findByFactory(id);
 	}
 
 	@Override

@@ -4,12 +4,15 @@ package com.javaweb.service;
 
 
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.javaweb.model.Authentification;
+import com.javaweb.model.Utilisateur;
 import com.javaweb.repository.AuthentificationRepository;
 
 
@@ -23,5 +26,7 @@ public class AuthentificationService implements IAuthentificationService {
 	@Override
 	public Authentification findByLogin(String login) {
 		return auth.findByLogin(login);
-	} 
+	}
+
+	
 }
